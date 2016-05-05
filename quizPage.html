@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="scriptPage.js"></script>
+    <title>Math Quiz</title>
+    <h1>Answer the questions below</h1>
+</head>
+<body>
+<h3>Web Design Quiz</h3>
+
+<form name="quiz">
+    1. What does CSS stand for?<br>
+    <ol style="margin-top: 1pt">
+        <input type="radio" name="q1" value="Colorful Style Symbols">Colorful Style Symbols<br>
+        <input type="radio" name="q1" value="Cascading Style Sheets">Cascading Style Sheets<br>
+        <input type="radio" name="q1" value="Computer Style Symbols">Computer Style Symbols<br>
+    </ol>
+        <br>
+    2. What does DHTML stand for?<br>
+    <ol style="margin-top: 1pt">
+        <input type="radio" name="q2" value="Dramatic HTML">Dramatic HTML<br>
+        <input type="radio" name="q2" value="Design HTML">Design HTML<br>
+        <input type="radio" name="q2" value="Dynamic HTML">Dynamic HTML<br>
+    </ol>
+    <br>
+    3. Who created Javascript?
+    <ol style="margin-top: 1pt">
+        <input type="radio" name="q3" value="Microsoft">Microsoft<br>
+        <input type="radio" name="q3" value="Netscape">Netscape<br>
+        <input type="radio" name="q3" value="Sun Micro Systems">Sun Micro Systems<br>
+    </ol>
+    <br>
+    4. What does CGI stand for?
+    <ol style="margin-top: 1pt">
+        <input type="radio" name="q4" value="Cascading Gate Interaction">Cascading Gate Interaction<br>
+        <input type="radio" name="q4" value="Common GIF Interface">Common GIF Interface<br>
+        <input type="radio" name="q4" value="Common Gateway Interface">Common Gateway Interface<br>
+    </ol>
+    <br>
+    <input type="button" value="Get score" onClick="getScore(this.form)">
+    <input type="reset" value="Clear answers">
+    <p> Score = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong><br><br>
+        Correct answers:<br>
+<textarea class="bgclr" name="solutions" wrap="virtual" rows="4" cols="30" disabled>
+</textarea>
+</form>
+
+</body>
+</html>
